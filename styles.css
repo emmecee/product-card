@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.desktop-img {
+    display: none;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.main-container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.mobile-img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.info-container {
+    padding: 20px;
+}
+
+span {
+    letter-spacing: 4px;
+    font-size: smaller;
+}
+
+h1,
+h2 {
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+    font-size: 35px;
+    line-height: 32px;
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.price-container {
+    display: flex;
+}
+
+.price-container>p {
+    text-decoration: line-through;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.cta-container {
+    position: relative;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(158, 55%, 13%);
+}
+
+.icon-img {
+    position: absolute;
+    top: 25px;
+    left: 4.23em;
+}
+
+@media screen and (min-width: 475px) {
+    .mobile-img {
+        display: none;
+    }
+
+    .desktop-img {
+        display: block;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .icon-img {
+        position: absolute;
+        top: 25px;
+        left: 5em;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
